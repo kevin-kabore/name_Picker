@@ -14,9 +14,9 @@ function eachName() {
   } else {
     eachName();
   }
-}
 
-// var newArray = [];
-// var a=["a","b","c"];
-// for(var i=0;i<a.length;i++)
-//     if(a[i]!=="a") newArray.push(a[i]);
+  if (alreadyCalled.length === wdi_24_names.length) {
+    alreadyCalled = [];
+    console.log("Called on every student! Resetting. Try again!");
+  }
+}
